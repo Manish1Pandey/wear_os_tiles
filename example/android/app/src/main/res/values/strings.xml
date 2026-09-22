@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Overrides of the wear_os_tiles plugin's default labels. -->
+    <string name="wear_os_tiles_tile_label">Steps</string>
+    <string name="wear_os_tiles_tile_description">Today\'s steps towards your goal</string>
+    <string name="wear_os_tiles_complication_label">Steps goal</string>
+    <string name="wear_os_tiles_complication_preview_text">6.0k</string>
+    <string name="wear_os_tiles_complication_preview_title">Steps</string>
+    <string name="wear_os_tiles_empty_tile_text">Open Step Goal to start tracking</string>
+    <!-- Labels of the example's own extra services. -->
+    <string name="water_tile_label">Water</string>
+    <string name="water_complication_label">Water glasses</string>
+</resources>

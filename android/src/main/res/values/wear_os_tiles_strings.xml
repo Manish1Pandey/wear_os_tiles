@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Override any of these in your app's res/values/strings.xml. -->
+<resources>
+    <string name="wear_os_tiles_tile_label">App tile</string>
+    <string name="wear_os_tiles_tile_description">Shows information from the app</string>
+    <string name="wear_os_tiles_empty_tile_text">Open the app to set up this tile</string>
+    <string name="wear_os_tiles_complication_label">App data</string>
+    <string name="wear_os_tiles_complication_preview_text">60%</string>
+    <string name="wear_os_tiles_complication_preview_title">App</string>
+</resources>

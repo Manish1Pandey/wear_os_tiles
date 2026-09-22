@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Default preview shown in the tile picker: a round screen with a progress
+  ring and two text lines. Apps should override it with a screenshot of
+  their own tile (a same-named drawable, e.g. res/drawable/wear_os_tiles_tile_preview.png).
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="192dp"
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M96,0a96,96 0,1 1,0 192a96,96 0,1 1,0 -192z" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M96,8a88,88 0,1 1,0 176a88,88 0,1 1,0 -176z"
+        android:strokeWidth="6"
+        android:strokeColor="#FF333333" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M96,8a88,88 0,0 1,88 88a88,88 0,0 1,-88 88"
+        android:strokeLineCap="round"
+        android:strokeWidth="6"
+        android:strokeColor="#FF8AB4F8" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M60,78h72a6,6 0,0 1,0 12H60a6,6 0,0 1,0 -12z" />
+    <path
+        android:fillColor="#FFAAAAAA"
+        android:pathData="M72,100h48a4,4 0,0 1,0 8H72a4,4 0,0 1,0 -8z" />
+    <path
+        android:fillColor="#FF8AB4F8"
+        android:pathData="M56,128h80a14,14 0,0 1,0 28H56a14,14 0,0 1,0 -28z" />
+</vector>

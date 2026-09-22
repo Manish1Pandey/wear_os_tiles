@@ -1,0 +1,53 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <!--
+          Generic Wear OS tile rendering the layout stored by
+          WearTiles.updateTile('default', ...). Override the label/preview by
+          defining the same-named resources in your app, or remove it with
+          tools:node="remove" if your app does not need a default tile.
+        -->
+        <service
+            android:name="dev.manishpanday.wear_os_tiles.WearTileService"
+            android:description="@string/wear_os_tiles_tile_description"
+            android:exported="true"
+            android:icon="@drawable/wear_os_tiles_tile_icon"
+            android:label="@string/wear_os_tiles_tile_label"
+            android:permission="com.google.android.wearable.permission.BIND_TILE_PROVIDER">
+            <intent-filter>
+                <action android:name="androidx.wear.tiles.action.BIND_TILE_PROVIDER" />
+            </intent-filter>
+            <meta-data
+                android:name="androidx.wear.tiles.PREVIEW"
+                android:resource="@drawable/wear_os_tiles_tile_preview" />
+            <meta-data
+                android:name="dev.manishpanday.wear_os_tiles.TILE_ID"
+                android:value="default" />
+        </service>
+
+        <!--
+          Generic complication data source serving the data stored by
+          WearComplications.update('default', ...). Push-only: updates are
+          requested from Dart, so UPDATE_PERIOD_SECONDS is 0.
+        -->
+        <service
+            android:name="dev.manishpanday.wear_os_tiles.WearComplicationService"
+            android:exported="true"
+            android:icon="@drawable/wear_os_tiles_complication_icon"
+            android:label="@string/wear_os_tiles_complication_label"
+            android:permission="com.google.android.wearable.permission.BIND_COMPLICATION_PROVIDER">
+            <intent-filter>
+                <action android:name="android.support.wearable.complications.ACTION_COMPLICATION_UPDATE_REQUEST" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.wearable.complications.SUPPORTED_TYPES"
+                android:value="SHORT_TEXT,LONG_TEXT,RANGED_VALUE" />
+            <meta-data
+                android:name="android.support.wearable.complications.UPDATE_PERIOD_SECONDS"
+                android:value="0" />
+            <meta-data
+                android:name="dev.manishpanday.wear_os_tiles.COMPLICATION_ID"
+                android:value="default" />
+        </service>
+    </application>
+</manifest>
