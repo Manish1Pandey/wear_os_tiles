@@ -23,6 +23,11 @@ allprojects {
 
 plugins {
     id("com.android.library")
+    // Built-in Kotlin compilation, which replaces this plugin application,
+    // needs AGP 9 plus Flutter 3.47; the supported range starts at Flutter
+    // 3.35, whose Gradle tooling does not apply KGP to plugin modules, so it
+    // is applied here. Drop this line when that baseline moves up. See
+    // https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
     id("kotlin-android")
 }
 
@@ -34,10 +39,6 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
-    }
-
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17.toString()
     }
 
     sourceSets {
@@ -66,6 +67,14 @@ android {
                 }
             }
         }
+    }
+}
+
+// Modern replacement for the deprecated `android.kotlinOptions {}` block,
+// as required by the built-in Kotlin migration.
+kotlin {
+    compilerOptions {
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
     }
 }
 

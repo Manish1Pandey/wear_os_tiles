@@ -12,3 +12,7 @@
   SHORT_TEXT, LONG_TEXT and RANGED_VALUE; `WearComplications.update` and a
   `taps` stream.
 * Multiple tiles/complications through one-line manifest-declared subclasses.
+* Android build uses the Kotlin `compilerOptions` DSL instead of the
+  deprecated `android.kotlinOptions {}` block. The Kotlin Gradle Plugin is
+  still applied because the supported Flutter range starts at 3.35, whose
+  Gradle tooling does not apply it to plugin modules.

@@ -1,1 +1,1 @@
-rootProject.name = 'wear_os_tiles'
+rootProject.name = "wear_os_tiles"
