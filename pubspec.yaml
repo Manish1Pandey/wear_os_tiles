@@ -1,7 +1,7 @@
 name: wear_os_tiles
 description: Wear OS Tiles and watch-face Complications for Flutter apps. Describe tile layouts in Dart; generic Kotlin services render them with ProtoLayout.
 version: 0.1.0
-homepage: https://github.com/Manish1Pandey/wear_os_tiles
+homepage: https://flutterdev.in/packages/wear_os_tiles/
 repository: https://github.com/Manish1Pandey/wear_os_tiles
 issue_tracker: https://github.com/Manish1Pandey/wear_os_tiles/issues
 topics:

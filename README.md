@@ -213,3 +213,9 @@ See [SPEC.md](SPEC.md) for the full requirements and the Can/Cannot table.
 
 `example/` is a Wear OS app ("Step Goal") that uses every element, both
 action types, two tiles and two complications (ranged value and short text).
+
+## Links
+
+- **Documentation:** [flutterdev.in/packages/wear_os_tiles](https://flutterdev.in/packages/wear_os_tiles/)
+- **More Flutter packages:** [flutterdev.in](https://flutterdev.in)
+- **Learn data structures & algorithms in Dart:** [Algoistan](https://algoistan.flutterdev.in)
